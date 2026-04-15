@@ -22,17 +22,34 @@ const STEADY_RADIUS_JITTER = 1.65;
 /** Nudge steady shards left on screen so fewer sit over the shield center / tie. */
 const STEADY_GROUP_OFFSET_X = 1.3;
 
+/**
+ * Scroll-driven steady shards: early steps stay iconic (tetra / cube),
+ * then faceted “sphere-like” solids (icosa / dodeca + detail) instead of prisms.
+ */
 function createSteadyShardGeometry(sides: number): THREE.BufferGeometry {
   if (sides === 3) {
-    return new THREE.ConeGeometry(0.28, 0.62, 3);
+    return new THREE.TetrahedronGeometry(0.46, 0);
   }
   if (sides === 4) {
     const e = 0.38;
     return new THREE.BoxGeometry(e, e, e);
   }
-  const r = 0.3;
-  const h = 0.56;
-  return new THREE.CylinderGeometry(r, r, h, sides);
+  if (sides === 5) {
+    return new THREE.IcosahedronGeometry(0.4, 0);
+  }
+  if (sides === 6) {
+    return new THREE.DodecahedronGeometry(0.4, 0);
+  }
+  if (sides === 7) {
+    return new THREE.IcosahedronGeometry(0.38, 1);
+  }
+  if (sides === 8) {
+    return new THREE.DodecahedronGeometry(0.38, 1);
+  }
+  if (sides === 9) {
+    return new THREE.IcosahedronGeometry(0.36, 2);
+  }
+  return new THREE.IcosahedronGeometry(0.34, 3);
 }
 
 export function DeeptuxScene({
@@ -241,7 +258,7 @@ export function DeeptuxScene({
                 steadyRefs.current[i] = el;
               }}
             >
-              <coneGeometry args={[0.28, 0.62, 3]} />
+              <tetrahedronGeometry args={[0.46, 0]} />
               <meshStandardMaterial
                 color={BRAND_RED}
                 emissive={BRAND_RED}
