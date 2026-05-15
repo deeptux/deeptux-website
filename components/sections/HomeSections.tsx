@@ -69,7 +69,7 @@ export function HomeSections() {
                 ))}
               </span>
             </h2>
-            <p className="mt-4 max-w-prose rounded-xl border border-white/10 bg-black/45 px-3 py-2 text-sm font-normal leading-relaxed text-white/80 [text-shadow:0_1px_14px_rgba(0,0,0,0.75)] backdrop-blur-[1px] sm:mt-5 sm:px-4 sm:py-2.5 sm:text-base">
+            <p className="mt-4 max-w-prose rounded-xl border border-white/10 bg-black/45 px-3 py-2 text-sm font-normal leading-relaxed text-white/80 shadow-[0_12px_48px_rgba(0,0,0,0.4)] [text-shadow:0_1px_14px_rgba(0,0,0,0.75)] backdrop-blur-md sm:mt-5 sm:px-4 sm:py-2.5 sm:text-base">
               {heroLead}
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:mt-9 sm:flex-row sm:flex-wrap">
@@ -106,7 +106,7 @@ export function HomeSections() {
             </h3>
             <p className="mt-2 text-sm leading-relaxed text-white/75">
               Established {brand.founded}. We partner with organizations to ship
-              business solutions through technology—focused on the Philippines,
+              business solutions through technology, mostly focused on the Philippines,
               closing the advancement gap and bringing overseas-caliber delivery
               home.
             </p>

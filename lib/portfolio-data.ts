@@ -72,18 +72,33 @@ export const liveWebsites = [
 export const liveDemos = [
   {
     name: "Point-of-Sale/E-commerce",
-    role: "Ordering & operations",
+    role: "Ordering & Operations",
     href: "https://handrian.space/login",
   },
   {
     name: "Production Order Planner",
-    role: "Production planning",
-    href: "https://apptest-production-order-planner.vercel.app/", 
+    role: "Production/Manufacturing Planning",
+    href: "https://apptest-production-order-planner.vercel.app", 
   },
   {
     name: "B2B E-Commerce",
     role: "Commerce analytics",
-    href: "https://apptest-zagu-ecommerce.vercel.app/",
+    href: "https://apptest-zagu-ecommerce.vercel.app",
+  },
+  {
+    name: "RSP-Focused HRIS",
+    role: "Human Resources Info System",
+    href: "https://deeptux.github.io/apptest-hris",
+  },
+  {
+    name: "Financial Reporting System",
+    role: "Finance Technology Solutions",
+    href: "https://popic-projection-app-poc.vercel.app/dashboard",
+  },
+  {
+    name: "Messaging App",
+    role: "Communications Solutions",
+    href: "https://apptest-messaging-dev.web.app",
   },
 ] as const;
 
