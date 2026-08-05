@@ -2,16 +2,16 @@ export const brand = {
   name: "DEEPTUX IT SOLUTIONS",
   tagline: "Tailored Tech. Professional Depth. Solutions that fit.",
   founded: "March 2025",
-  location: "Megaworld Capital Town, City of San Fernando, Pampanga, Philippines",
-  preparedBy: "Engr. Mhel Handrian A. Pineda",
+  location: "St. Jude Village, City of San Fernando, Pampanga, Philippines",
+  preparedBy: "DeepTux IT Solutions",
 };
 
 /** Hero intro — brief; full story lives in following sections */
 export const heroLead =
-  "We ship secured e‑commerce, bespoke business systems, IoT & field security for brands delivering international-grade. Led by Engr. Mhel Handrian Pineda, Full Stack Solutions Architect & Electronics R&D lead w/ deep fintech, insurance & IoT experience. Focuses on outcomes you can run in prod, not pitch decks.";
+  "We ship secured e‑commerce, bespoke business systems, IoT & field security for brands delivering international-grade. With deep fintech, insurance & IoT experience. Focuses on outcomes you can run in prod, not pitch decks.";
 
 export const founder = {
-  title: "Full Stack Software Engineer & Electronics R&D Specialist",
+  title: "Chief Technology Officer",
   summary:
     "Nearly a decade across fintech, insurance, outsourcing & IoT, translating complex stacks into practical delivery w/industry-standard practices.",
   stack: ["React", "Next.js", "FastAPI", "AWS", "IoT", "AI"],
