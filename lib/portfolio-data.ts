@@ -134,7 +134,7 @@ export const cctvProjects = [
 ] as const;
 
 export const contact = {
-  phones: ["+63 954 293 8207", "+63 962 126 4405"],
+  phones: ["+63 962 126 4405"],
   email: "deeptuxph2025@gmail.com",
 };
 
